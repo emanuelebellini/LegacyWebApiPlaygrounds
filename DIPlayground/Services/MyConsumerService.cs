@@ -6,11 +6,11 @@ using System.Web;
 
 namespace DIPlayground.Services
 {
-    public class MyConsumerService
+    public class MyConsumerService : IMyConsumerService
     {
         private IDictionaryProvider _dictionaryProvider;
 
-        public MyConsumerService(IDictionaryProvider dictionaryProvider) 
+        public MyConsumerService(IDictionaryProvider dictionaryProvider)
         {
             _dictionaryProvider = dictionaryProvider;
         }

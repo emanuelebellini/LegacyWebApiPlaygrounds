@@ -23,14 +23,6 @@ namespace DIPlayground
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             //BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            var services = new ServiceCollection();
-            services.AddSingleton<IDictionaryProvider, FallbackDictionaryProvider>();
-            services.AddTransient<MyConsumerService>();
-            services.AddTransient<ValuesController>();
-            var root = services.BuildServiceProvider();
-
-            DependencyResolver.SetResolver(new MsDiMvcResolver(root));
         }
     }
 }

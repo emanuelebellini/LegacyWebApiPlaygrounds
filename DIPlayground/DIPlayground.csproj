@@ -178,7 +178,8 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Config\DictionarySection.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="DI\MsDiMvcResolver.cs" />
+    <Compile Include="DI\ServiceProviderDependencyResolver.cs" />
+    <Compile Include="DI\ServiceProviderHttpControllerActivator.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +188,7 @@
     <Compile Include="Services\DictionaryManager\DictionaryProviderByDefault.cs" />
     <Compile Include="Services\DictionaryManager\FallbackDictionaryProvider.cs" />
     <Compile Include="Services\DictionaryManager\IDictionaryProvider.cs" />
+    <Compile Include="Services\IMyConsumerService.cs" />
     <Compile Include="Services\MyConsumerService.cs" />
   </ItemGroup>
   <ItemGroup>
